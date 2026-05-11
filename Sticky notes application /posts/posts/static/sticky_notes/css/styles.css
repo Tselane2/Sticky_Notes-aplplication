@@ -1,0 +1,172 @@
+/* ── Base ── */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* ── Buttons ── */
+.btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+.btn-secondary {
+    background: #555;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-danger {
+    background: #e63946;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover,
+.btn-secondary:hover,
+.btn-danger:hover {
+    opacity: 0.85;
+}
+
+/* ── Note List ── */
+.new-note {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note-card {
+    background: #fff8a6;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note-card h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+    color: #333;
+    word-break: break-word;
+}
+
+.note-card p {
+    font-size: 0.9rem;
+    color: #555;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.note-meta {
+    font-size: 0.75rem;
+    color: #999;
+    margin: 8px 0;
+}
+
+.actions a {
+    margin-right: 10px;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+/* ── Form ── */
+.form-card {
+    background: #fff8a6;
+    padding: 25px;
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-card label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.form-card input[type="text"],
+.form-card textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.form-card .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.error {
+    color: #e63946;
+    font-size: 0.82rem;
+    margin-top: 4px;
+}
+
+/* ── Delete Confirm ── */
+.confirm-card {
+    background: #fff8a6;
+    padding: 25px;
+    max-width: 440px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.confirm-card p {
+    margin: 15px 0 25px;
+    color: #444;
+}
+
+.confirm-card .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
